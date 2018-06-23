@@ -5,14 +5,14 @@ import cv2
 # -*- coding: utf-8 -*-
 import cv2
 
-img= cv2.imread('test.jpg')
+img= cv2.imread("20180602-230646.jpg")
 img= cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #标准鼠标交互函数
 def onmouse(event, x, y, flags, param):
     # 当鼠标移动时
     if event==cv2.EVENT_MOUSEMOVE:
-        print(img[y,x])
+        print(x,y,img[x,y])
 
 def pixelDetect():
     cv2.namedWindow("img")

@@ -27,8 +27,6 @@ import time
 import cv2
 import time
 
-
-
 def snapShot(delay=10):
     cap = cv2.VideoCapture(0)
     # 读取摄像头，0表示系统默认摄像头
